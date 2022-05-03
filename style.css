@@ -1,5 +1,6 @@
-/* body {
-    background-color: lightblue;
+ body {
+     background: url("./7561340.jpg");
+    
     margin: 0;
     counter-reset: myCount 0;
     font-family: 'Roboto', sans-serif;
@@ -11,5 +12,41 @@
 *::after {
     box-sizing: border-box;
     line-height: 1.6;
-} */
+} 
+ .content{
+    width: 20rem;
+    margin:0 auto;
+ }
+.header{
+    
+    display: flex;
+    
+    margin:1rem auto;
+}
+.input_buttons{
+    margin-left: 1rem;
+    
+}
+.submit,.clear,.deleteAllCompletedTask,.deleteAll{
+    padding:0.2rem 1rem;
+    border-radius: 900px;
+    border: none;
+    background-color: blue;
+    color:white;
+    cursor: pointer;
 
+}
+.submit:hover,.clear:hover{
+background-color: rgb(34, 34, 172);
+
+}
+
+.input{
+   outline: none;
+  
+}
+.input:focus {
+    /* outline:none; */
+    border: rgb(255, 0, 115) 1px solid;
+    box-shadow: rgb(255, 0, 0) 0 0 3px 1px ;
+  }
