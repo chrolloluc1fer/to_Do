@@ -21,7 +21,6 @@ inputTag.addEventListener("keydown", (e) => {
             <button class="delete">&#x2715;</button><button class="done">&#10004;</button></div>`
             inputTag.value = ""
             ulList.appendChild(li);
-            
             handleRemoval(li);
             done(li);
             check();

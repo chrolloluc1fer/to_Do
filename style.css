@@ -5,6 +5,9 @@
     counter-reset: myCount 0;
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Serif', serif;
+    counter-reset: pending;
+    
+
 }
 
 *,
@@ -14,7 +17,7 @@
     line-height: 1.6;
 } 
  .content{
-    width: 20rem;
+    width: 25rem;
     margin:0 auto;
  }
 .header{
@@ -24,7 +27,7 @@
     margin:1rem auto;
 }
 .input_buttons{
-    margin-left: 1rem;
+    margin-left: 5rem;
     
 }
 .submit,.clear,.deleteAllCompletedTask,.deleteAll{
@@ -42,6 +45,7 @@ background-color: rgb(34, 34, 172);
 }
 
 .input{
+  
    outline: none;
   
 }
@@ -50,3 +54,78 @@ background-color: rgb(34, 34, 172);
     border: rgb(255, 0, 115) 1px solid;
     box-shadow: rgb(255, 0, 0) 0 0 3px 1px ;
   }
+
+  .pending_task li{
+      border-radius: 900px;
+      padding:0.5rem 1rem;
+     background-color: rgb(244, 244, 143);
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+  }
+  .pending_task{
+      padding:0;
+  }
+  .pending_task li::before{
+        
+        
+        content:"Task " counter(pending) " -";
+        counter-increment: pending 1;
+        font-weight: bolder;
+  }
+  .value{
+        overflow-x:hidden;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .completed_task li{   
+    list-style-type:none;
+  }
+
+.completed_task_heading{
+    font-size: 1.5rem;
+    font-weight: bold
+}
+
+.delete{
+    font-weight: bolder;
+    border-radius: 50%;
+    border: 2px red solid;
+    cursor: pointer;
+}
+
+
+
+
+.done{
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 2px rgb(51, 255, 0) solid;
+    cursor: pointer;
+
+}
+
+.completed_task_heading{
+    color: white;
+    padding:.5rem;
+    background-color: rgb(246, 70, 70);
+    border-radius: 900px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.completed_task{
+    padding: 0;
+    margin:0;
+}
+.completed_task li{
+    font-weight: bolder;
+    border-radius: 900px;
+  
+    padding:0.5rem 1rem;
+    background-color: rgb(117, 240, 144);
+    list-style-type: none;
+    
+}
