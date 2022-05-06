@@ -69,20 +69,18 @@ background-color: rgb(34, 34, 172);
       padding:0;
   }
   .pending_task li::before{
-        
-        
-        content:"Task " counter(pending) " -";
+        content: counter(pending) ;
         counter-increment: pending 1;
         font-weight: bolder;
   }
   .value{
-        overflow-x:hidden;
-      display: flex;
-      flex-wrap: wrap;
+    margin: 0 1rem;
+      word-break: break-all;
   }
 
   .completed_task li{   
     list-style-type:none;
+    word-break: break-all;
   }
 
 .completed_task_heading{
@@ -128,4 +126,9 @@ background-color: rgb(34, 34, 172);
     background-color: rgb(117, 240, 144);
     list-style-type: none;
     
+}
+
+
+.task_button{
+    display: flex;
 }

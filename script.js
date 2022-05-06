@@ -17,7 +17,7 @@ inputTag.addEventListener("keydown", (e) => {
     if (e.key == 'Enter' && value != "") {
         if (value != "") {
             let li = document.createElement("li");
-            li.innerHTML = `<div class="value">${value}</div><div>
+            li.innerHTML = `<div class="value">${value}</div><div class="task_button">
             <button class="delete">&#x2715;</button><button class="done">&#10004;</button></div>`
             inputTag.value = ""
             ulList.appendChild(li);
